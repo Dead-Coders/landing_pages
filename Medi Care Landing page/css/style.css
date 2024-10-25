@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 95%;
+  margin: auto;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.5;
+}
+
+/*----------head--------*/
+.flex {
+  display: flex;
+}
+
+/*----------navbar--------*/
+.navbar {
+  background: #19C9D9;
+  color: white;
+}
+
+.brand h2 {
+  line-height: 60px;
+  font-size: 20px;
+}
+
+.brand h2 label {
+  font-weight: 200;
+}
+
+.brand i {
+  font-size: 30px;
+  line-height: 60px;
+  margin-right: 10px;
+}
+
+.navbar .content {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+}
+
+.navbar nav a {
+  color: white;
+  transition: ease-in-out all 0.5s;
+}
+
+.navbar nav a:hover {
+  color: #ccb725;
+}
+
+.navbar nav {
+  flex: 1;
+  text-align: right;
+}
+
+.navbar nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.navbar nav ul li {
+  display: inline-block;
+  transition: 0.5s;
+  margin-right: 30px;
+}
+
+.navbar nav ul li.active {
+  padding: 5px 30px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background: #239AC1;
+}
+
+.navbar nav ul li:hover {
+  padding: 5px 30px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background: #239AC1;
+}
+
+.navbar nav i {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.navbar span {
+  text-align: center;
+  margin-left: 20px;
+  color: white;
+  font-size: 25px;
+  display: none;
+}
+
+.navbar .account {
+  margin-left: 40px;
+}
+
+button {
+  background: white;
+  border: none;
+  padding: 10px 35px;
+  border-radius: 50px;
+  color: #19C9D9;
+}
+
+.account i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #239AC1;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.3),
+    0px 0px 0px 8px rgba(255, 255, 255, 0.2);
+  margin-left: 40px;
+}
+
+@media only screen and (max-width:768px) {
+  .navbar nav ul {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #21cede;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .navbar nav ul li {
+    display: block;
+    margin: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .navbar nav ul li a {
+    color: white;
+  }
+
+  .navbar span {
+    color: white;
+    display: block;
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 5px;
+  }
+}
+
+/*----------navbar--------*/
+/*----------home--------*/
+.left, .right {
+  width: 50%;
+  margin-top: 5%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.home .content {
+  max-width: 80%;
+  margin: auto;
+}
+
+.home {
+  background: #19C9D9;
+  height: 90vh;
+  margin: auto;
+  color: white;
+}
+
+.home .content img {
+  position: relative;
+  width: 400px;
+  border-radius: 50%;
+  border: 8px solid white;
+  box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, 0.1),
+    0px 0px 0px 16px rgba(255, 255, 255, 0.2),
+    0px 0px 0px 24px rgba(255, 255, 255, 0.3),
+    5px 5px 15px 5px rgba(255, 255, 255, 0.4);
+}
+
+.home h2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.home h1 {
+  font-size: 70px;
+  line-height: 60px;
+}
+
+.home h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.home .content p {
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+.home .btn1 {
+  margin-left: 20px;
+  background: #239AC1;
+  border: 2px solid white;
+  color: white;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom .scroll img {
+  width: auto;
+  height: auto;
+}
+
+.bottom {
+  text-align: center;
+  margin-top: 7%;
+}
+
+.bottom .logo svg {
+  padding: 5px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.3),
+    0px 0px 0px 8px rgba(255, 255, 255, 0.2);
+}
+
+.bottom .icon {
+  margin-top: 30px;
+}
+
+.bottom .icon i {
+  background: white;
+  color: black;
+  margin-right: 0px;
+}
+
+.bottom .scroll {
+  margin-top: 30px;
+}
+
+.bottom .scroll p {
+  opacity: 0.8;
+}
+
+.bottom h1 {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  font-size: 150px;
+  color: white;
+  z-index: 1;
+  letter-spacing: 3px;
+  opacity: 0.2;
+}
+
+/*----------home--------*/
+@media only screen and (max-width:768px) {
+  .home {
+    height: 100vh;
+  }
+
+  .account {
+    display: none;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .home .content {
+    flex-direction: column;
+  }
+
+  .bottom .icon {
+    display: block;
+  }
+
+  .bottom h1 {
+    font-size: 100px;
+  }
+}
